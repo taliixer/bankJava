@@ -13,7 +13,13 @@ public class TestMethods {
 
         System.out.println("El saldo de Jaime antes de la transferencia "+ accountJaime.balance);
 
-        accountJaime.exchange(600, accountDiego);
+        boolean canTransfer = accountJaime.exchange(600, accountDiego);
+        if (canTransfer){
+            System.out.println("Transferencia exitosa");
+        }else{
+            System.out.println("No es posible");
+        }
+
         System.out.println(accountDiego.balance);
 
         System.out.println("El saldo de Jaime despues de la transferencia "+ accountJaime.balance);
