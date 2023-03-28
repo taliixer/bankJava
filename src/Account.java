@@ -16,4 +16,14 @@ class Account {
             return false;
         }
     }
+
+    public boolean exchange(double value, Account account){
+        if (this.balance >= value){
+            this.balance -= value;
+
+            account.funding(value);
+            return true;
+        }
+        return false;
+    }
 }
