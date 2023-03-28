@@ -6,5 +6,10 @@ public class TestMethods {
         accountDiego.funding(400);
 
         System.out.println(accountDiego.balance);
+
+        accountDiego.withdrawals(400);
+        System.out.println(accountDiego.balance);
+
+
     }
 }

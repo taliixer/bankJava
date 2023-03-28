@@ -8,4 +8,12 @@ class Account {
     public void funding(double value){
         this.balance += value;
     }
+    public boolean withdrawals(double value){
+        if (this.balance >= value){
+            this.balance -= value;
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
