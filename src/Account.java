@@ -3,7 +3,8 @@ class Account {
     double balance;
     int agency;
     int number;
-    String holder;
+    Customer holder = new Customer(); //Cada Vez que se cree un objeto cuenta tambien se va a crear un objeto cliente
+
 
     public void funding(double value){
         this.balance += value;
