@@ -1,9 +1,9 @@
 //entity account
 class Account {
-    double balance;
-    int agency;
-    int number;
-    Customer holder = new Customer(); //Cada Vez que se cree un objeto cuenta tambien se va a crear un objeto cliente
+    private double balance;
+    private int agency;
+    private int number;
+    private Customer holder = new Customer(); //Cada Vez que se cree un objeto cuenta tambien se va a crear un objeto cliente
 
 
     public void funding(double value){
@@ -27,4 +27,28 @@ class Account {
         }
         return false;
     }
+
+    public double getBalance(){
+        return balance;
+    }
+
+    public void setAgency(int newAgency){
+        if (newAgency > 0){
+            this.agency = newAgency;
+        }else {
+            System.out.println("El valor de la agencia debe ser mayor a cero");
+        }
+    }
+    public int getAgency() {
+        return agency;
+    }
+
+    public Customer getHolder(){
+        return holder;
+    }
+    public void setHolder(Customer holder) {
+        this.holder = holder;
+    }
+
+
 }

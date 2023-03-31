@@ -3,6 +3,6 @@ public class TestReferencia3 {
         Account diegoAccount = new Account();
         //diegoAccount.holder = new Customer();
         //diegoAccount.holder.name = "Diego";
-        System.out.println(diegoAccount.holder.name);
+        //System.out.println(diegoAccount.holder.name);
     }
 }
